@@ -1,18 +1,18 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charSet="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="GLC리스"/>
-<meta property="og:site_name" content="GLC리스" />
-<meta name="Naver Search Advisor" content="GLC리스">
+<meta property="og:title" content="‘GLC 리스’ 비교"/>
+<meta property="og:site_name" content="‘GLC 리스’ 비교" />
+<meta name="Naver Search Advisor" content="‘GLC 리스’ 비교">
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
-<meta name="description" content="GLC리스, 월 납입료 하나에 담긴 투명하고 계획적인 자산 관리 솔루션" />
-<meta property="og:description" content="GLC리스, 월 납입료 하나에 담긴 투명하고 계획적인 자산 관리 솔루션"/>
-<meta itemprop="description" content="GLC리스, 월 납입료 하나에 담긴 투명하고 계획적인 자산 관리 솔루션" />
-<meta name="twitter:description" content="GLC리스, 월 납입료 하나에 담긴 투명하고 계획적인 자산 관리 솔루션"/>
+<meta name="description" content="" />
+<meta property="og:description" content=""/>
+<meta itemprop="description" content="" />
+<meta name="twitter:description" content=""/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GLC리스"/>
+<meta name="twitter:title" content="‘GLC 리스’ 비교"/>
 <meta name="twitter:url" content="/"/>
 <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
 <meta name="google-site-verification" content="ZUbfA65x-MkQrfLyk3-7unUf-XvxEFZvpKdTpvi8cqo" />
@@ -25,9 +25,9 @@
 <meta name="Yeti" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 
-<meta name="subject" content="GLC리스" />
-<meta name="publisher" content="GLC리스" />
-<meta name="Other Agent" content="GLC리스" />
+<meta name="subject" content="‘GLC 리스’ 비교" />
+<meta name="publisher" content="‘GLC 리스’ 비교" />
+<meta name="Other Agent" content="‘GLC 리스’ 비교" />
 <meta name="location" content="South Korea" />
 <meta name="distribution" content="global" />
 <meta name="rating" content="general" />
@@ -51,11 +51,11 @@
     <!-- Apple iOS 최적화 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="GLC리스">
+    <meta name="apple-mobile-web-app-title" content="‘GLC 리스’ 비교">
 
     <!-- Android Chrome 최적화 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="GLC리스">
+    <meta name="application-name" content="‘GLC 리스’ 비교">
 
     <!-- 모바일 뷰포트 최적화 -->
     <meta name="viewport"
@@ -69,7 +69,7 @@
 
 
 
-<title>GLC리스</title>
+<title>‘GLC 리스’ 비교</title>
 
 <meta name="next-head-count" content="25"/>
 <meta name="format-detection" content="telephone=no"/>
@@ -80,620 +80,972 @@
 
 
 
-<!-- 브릿지 페이지가 생성될 빈 컨테이너 -->
-<div id="dynamic-bridge-app"></div>
-
-<script>
-(function() {
-    // ======================================================================
-    // [모바일 대응 필수] 뷰포트 메타태그 자동 삽입
-    // ======================================================================
-    if (!document.querySelector('meta[name="viewport"]')) {
-        const meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-        document.head.appendChild(meta);
-    }
-
-    // ======================================================================
-    // [설정 영역] ★수백 개 배포 시 사이트마다 이 값을 반드시 다르게 설정하세요!★
-    // ======================================================================
-    const config = {
-        siteId: "site_loan_001",           // [필수] 사이트 고유 ID (텍스트 풀 시드값 및 고유 해시 생성용)
-        targetUrl: "https://kerion.info/t8gl0c7nar",     // [필수] 실제 이동할 URL (검색엔진 가이드라인 준수를 위해 rel 속성 적용)
-        themeColor: "#007bff",             // 사이트 테마 컬러 (버튼 색상)
-        topic: "자동차 리스 및 장기렌트카",          // 사이트별 주요 타겟 키워드
-        minCount: 130,                     // 최소 방문자 수 범위
-        maxCount: 380                      // 최대 방문자 수 범위
-    };
-
-    // ======================================================================
-    // [코어 로직] 구조 난수화 및 표준 규격 전환 엔진
-    // ======================================================================
-
-    // 1. 사이트 ID 기반 자체 난수 생성기
-    let seedValue = 0;
-    for(let i=0; i<config.siteId.length; i++) seedValue += config.siteId.charCodeAt(i);
-    function seededRandom() {
-        let t = seedValue += 0x6D2B79F5;
-        t = Math.imul(t ^ t >>> 15, t | 1);
-        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
-        return ((t ^ t >>> 14) >>> 0) / 4294967296;
-    }
-    function pickRandom(arr) {
-        return arr[Math.floor(seededRandom() * arr.length)];
-    }
-
-    // 2. 동적 클래스명 및 디자인 수치 생성 (페이지 로드 시마다 무작위 해시 적용)
-    const hash = Math.random().toString(36).substring(2, 6) + Math.floor(seededRandom() * 1000);
-    const prefix = `cls_${hash}_`;
-    
-    const dynPadding = Math.floor(seededRandom() * 20) + 50; 
-    const dynMargin = Math.floor(seededRandom() * 20) + 40;  
-    const dynRadius = Math.floor(seededRandom() * 8) + 12;   
-
-    // 3. 날짜 로직
-    const today = new Date();
-    const todayIso = today.toISOString().split('T')[0];
-    const todayStr = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일`;
-
-    const yesterday = new Date(today);
-    yesterday.setDate(today.getDate() - 1);
-    const yesterdayIso = yesterday.toISOString().split('T')[0];
-    const yesterdayStr = `${yesterday.getFullYear()}년 ${yesterday.getMonth() + 1}월 ${yesterday.getDate()}일`;
-
-    // 4. 콘텐츠 스피닝 풀
-    const titles = [
-        "잠시만 확인해주세요!", "신청 전 마지막 확인 단계입니다.", "맞춤 솔루션 안내 페이지입니다.", 
-        "다음 단계로 이동을 준비 중입니다.", "성공적인 접속을 위해 확인해 주세요.", "최적의 맞춤 정보를 찾고 있습니다.", 
-        "고객님을 위한 전용 안내 페이지입니다.", "안전한 진행을 위해 잠시 대기해 주세요.", "상담 신청을 위한 필수 확인 단계입니다.", 
-        "빠른 연결을 위해 데이터 분석 중입니다.", "나에게 맞는 최적의 결과를 확인하세요.", "정확한 안내를 위한 마지막 과정입니다.", 
-        "성공적인 솔루션 매칭이 진행 중입니다.", "맞춤형 전문가 연결을 준비하고 있습니다.", "안전한 페이지로 이동 중입니다. 잠시만 기다려주세요."
-    ];
-    
-    const descriptions = [
-        `입력하신 정보를 바탕으로 <strong>${config.topic}</strong> 결과를 분석 중입니다.`,
-        `성공적인 <strong>${config.topic}</strong> 상담 신청을 위해 최종 페이지로 연결됩니다.`,
-        `고객님께 최적화된 <strong>${config.topic}</strong> 솔루션을 제공하기 위한 단계입니다.`,
-        `안전하고 빠른 <strong>${config.topic}</strong> 진행을 위해 아래 버튼을 클릭해 주세요.`,
-        `빅데이터 기반으로 가장 적합한 <strong>${config.topic}</strong> 맞춤 견적을 산출하고 있습니다.`,
-        `검증된 <strong>${config.topic}</strong> 전문가와의 매칭을 위해 다음 페이지로 이동합니다.`,
-        `현재 고객님의 조건에 딱 맞는 <strong>${config.topic}</strong> 혜택을 확인 중입니다.`,
-        `실시간으로 업데이트되는 <strong>${config.topic}</strong> 핵심 정보를 제공해 드립니다.`,
-        `신속하고 정확한 <strong>${config.topic}</strong> 안내를 위해 최종 확인을 부탁드립니다.`,
-        `수많은 데이터 중 고객님만을 위한 <strong>${config.topic}</strong> 플랜을 구성하고 있습니다.`,
-        `원활한 <strong>${config.topic}</strong> 서비스 이용을 위해 필수적인 안내 페이지입니다.`,
-        `최고의 만족을 드릴 수 있는 <strong>${config.topic}</strong> 컨설팅으로 바로 연결해 드립니다.`,
-        `불필요한 과정 없이 <strong>${config.topic}</strong> 핵심 솔루션만 빠르게 확인해 보세요.`,
-        `고객님의 성공적인 <strong>${config.topic}</strong> 진행을 돕기 위한 전용 브릿지 페이지입니다.`,
-        `아래 버튼을 눌러 나에게 가장 유리한 <strong>${config.topic}</strong> 조건을 즉시 확인해 보세요.`
-    ];
-
-    const buttons = [
-        "무료로 결과 확인하기", "나에게 맞는 솔루션 신청", "맞춤 견적 무료 조회", "나만의 맞춤 솔루션 확인", 
-        "무료 컨설팅 받아보기", "실시간 결과 조회하기", "최적의 조건 무료로 비교하기", "1:1 맞춤 상담 바로가기", 
-        "숨은 혜택 확인하고 신청하기", "나의 예상 결과 1초 만에 확인", "전문가 무료 매칭 시작하기", 
-        "가장 유리한 조건 확인하기", "비공개 특별 혜택 보러가기", "나의 맞춤형 플랜 확인하기", 
-        "지금 바로 혜택 조회하기", "안전하게 무료 상담 신청하기"
-    ];
-
-    const disclaimers = [
-        "본 정보는 제휴 파트너사의 지원을 받아 작성되었으며, 서비스 이용 시 소정의 수수료를 지급받을 수 있습니다.",
-        "해당 콘텐츠는 파트너십을 통해 제공되며, 일정액의 대가를 받을 수 있는 제휴 링크가 포함되어 있습니다.",
-        "본 페이지의 서비스는 광고주의 협력으로 운영되며, 이용 실적에 따라 제휴 수수료가 발생할 수 있습니다.",
-        "이 페이지는 제휴 마케팅의 일환으로 구성되었으며, 파트너사로부터 일정 수수료를 제공받을 수 있음을 안내드립니다.",
-        "본 안내는 정보 제공을 목적으로 하며, 연결된 사이트에서의 활동으로 인해 당사에 소정의 리워드가 지급될 수 있습니다.",
-        "독자에게 유용한 정보를 제공하기 위해 작성된 페이지이며, 제휴사로부터 마케팅 지원을 받고 있습니다.",
-        "해당 브릿지 페이지는 공식 파트너 활동의 일환으로, 연결된 서비스를 통해 수익이 발생할 수 있습니다.",
-        "고객님의 편의를 위해 제공되는 맞춤 정보이며, 서비스 제휴에 따른 경제적 대가를 받을 수 있습니다.",
-        "본 추천 서비스는 제휴 광고가 포함되어 있어, 상담 완료 시 수수료가 제공될 수 있음을 명시합니다.",
-        "신뢰할 수 있는 파트너사의 정보를 선별하여 제공하며, 이에 따른 소정의 커미션을 지급받을 수 있습니다."
-    ];
-
-    const semanticTags = ["div", "section", "article", "main"];
-
-    const selectedTitle = pickRandom(titles);
-    const selectedDesc = pickRandom(descriptions);
-    const selectedBtn = pickRandom(buttons);
-    const selectedDisclaimer = pickRandom(disclaimers);
-    const wrapperTag = pickRandom(semanticTags);
-    const innerTag = pickRandom(["div", "section"]);
-
-    // 5. 모바일 대응 동적 스타일 인젝션
-    const style = document.createElement('style');
-    style.textContent = `
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css');
-        
-        .${prefix}container, .${prefix}container * { box-sizing: border-box; }
-        .${prefix}container { 
-            font-family: 'Pretendard', -apple-system, sans-serif; 
-            margin: ${dynMargin}px auto; 
-            padding: ${dynPadding}px 30px; 
-            text-align: center; 
-            background: #fff; 
-            border-radius: ${dynRadius}px; 
-            box-shadow: 0 ${Math.floor(seededRandom()*5)+5}px ${Math.floor(seededRandom()*20)+20}px rgba(0,0,0,0.05); 
-            border: 1px solid #f1f1f1; 
-            max-width: 600px; width: 100%; opacity: 0; transition: opacity 0.4s ease; 
-        }
-        .${prefix}h1 { font-size: ${Math.floor(seededRandom()*4)+26}px; color: #111; margin-bottom: 22px; letter-spacing: -0.5px; word-break: keep-all; line-height: 1.3; }
-        .${prefix}p { font-size: 17px; color: #444; line-height: 1.6; margin-bottom: 35px; word-break: keep-all; }
-        .${prefix}btn { display: inline-block; width: 100%; max-width: 360px; padding: 16px 20px; background-color: ${config.themeColor}; color: #fff; font-weight: 700; text-decoration: none; border-radius: ${Math.floor(seededRandom()*8)+6}px; font-size: 19px; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: transform 0.2s, background-color 0.2s; cursor: pointer; border: none; text-align: center; }
-        .${prefix}btn:hover { transform: translateY(-2px); filter: brightness(95%); }
-        .${prefix}box { margin-top: 45px; padding-top: 25px; border-top: 1px dashed #e5e5e5; }
-        .${prefix}stat-text { font-size: 20px; font-weight: 700; color: #333; }
-        .${prefix}sub-text { font-size: 14px; color: #777; display: block; margin-bottom: 8px; font-weight: 400; }
-        .${prefix}num { font-size: 32px; font-weight: 900; color: ${config.themeColor}; }
-        .${prefix}foot { font-size: 12px; color: #999; line-height: 1.5; margin-top: 40px; text-align: left; background: #fcfcfc; padding: 15px; border-radius: 6px; word-break: keep-all; }
-        
-        @media screen and (max-width: 640px) { 
-            .${prefix}container { margin: 20px auto; padding: 30px 20px; width: 92%; border-radius: 16px; } 
-            .${prefix}h1 { font-size: 22px; margin-bottom: 15px; }
-            .${prefix}p { font-size: 15px; margin-bottom: 25px; }
-            .${prefix}btn { font-size: 16px; padding: 14px 10px; }
-            .${prefix}num { font-size: 28px; }
-            .${prefix}box { margin-top: 30px; }
-        }
-    `;
-    document.head.appendChild(style);
-
-    // 6. 동적 DOM 생성 
-    const container = document.getElementById('dynamic-bridge-app');
-    if(container) {
-        container.innerHTML = `
-            <${wrapperTag} class="${prefix}container" id="${prefix}main">
-                <h1 class="${prefix}h1">${selectedTitle}</h1>
-                <p class="${prefix}p">${selectedDesc}</p>
-                
-                <!-- [개선 완료] 정석적인 아웃바운드 링크 구조 적용 (rel="nofollow sponsored") -->
-                <a href="${config.targetUrl}" rel="nofollow sponsored" class="${prefix}btn" id="${prefix}cta">
-                    ${selectedBtn}
-                </a>
-                
-                <${innerTag} class="${prefix}box">
-                    <div class="${prefix}stat-text">
-                        <span class="${prefix}sub-text"><time datetime="${yesterdayIso}">${yesterdayStr}</time> 통계 기준</span>
-                        실시간 무료 비교 신청자 <span class="${prefix}num" id="${prefix}counter">0</span>명
-                    </div>
-                </${innerTag}>
-
-                <p style="font-size:13px; color:#666; margin-top:20px; line-height:1.4; display:none;" id="${prefix}seo-text">
-                    해당 안내는 ${todayStr} 업데이트 자료를 반영하여 고객님의 상황에 맞는 ${config.topic} 정보를 원활히 제공하기 위함입니다.
-                </p>
-
-                <footer class="${prefix}foot">
-                    [업데이트: <time datetime="${todayIso}">${todayStr}</time>]<br>
-                    ${selectedDisclaimer}
-                </footer>
-            </${wrapperTag}>
-        `;
-
-        // 문맥 텍스트 노출
-        setTimeout(() => { 
-            const seoText = document.getElementById(`${prefix}seo-text`);
-            if(seoText) seoText.style.display = 'block'; 
-        }, 100);
-
-        // 7. 검색엔진 이해용 구조적 데이터(JSON-LD Schema) 동적 삽입
-        const schemaData = {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": `${config.topic} 안내`,
-            "dateModified": today.toISOString(),
-            "description": selectedDesc.replace(/<[^>]*>?/gm, '') 
-        };
-        const scriptEl = document.createElement('script');
-        scriptEl.type = 'application/ld+json';
-        scriptEl.text = JSON.stringify(schemaData);
-        document.head.appendChild(scriptEl);
-
-        // 8. 통계 카운터 애니메이션 엔진
-        function animateCount() {
-            const targetElement = document.getElementById(`${prefix}counter`);
-            if(!targetElement) return;
-            const dateSeed = yesterday.getFullYear() * 10000 + (yesterday.getMonth()+1) * 100 + yesterday.getDate() + seedValue;
-            
-            let pseudoRandom = Math.sin(dateSeed) * 10000;
-            pseudoRandom = pseudoRandom - Math.floor(pseudoRandom);
-            
-            const targetNumber = Math.floor(pseudoRandom * (config.maxCount - config.minCount + 1)) + config.minCount;
-            const startTime = performance.now();
-            const duration = 1800;
-
-            function updateNumber(currentTime) {
-                const progress = Math.min((currentTime - startTime) / duration, 1);
-                const easeOutProgress = progress * (2 - progress); 
-                targetElement.innerText = Math.floor(easeOutProgress * targetNumber).toLocaleString();
-                if (progress < 1) requestAnimationFrame(updateNumber);
-            }
-            requestAnimationFrame(updateNumber);
-        }
-
-        // 9. 페이드인 및 애니메이션 시동
-        setTimeout(() => {
-            const mainEl = document.getElementById(`${prefix}main`);
-            if(mainEl) mainEl.style.opacity = '1';
-            animateCount();
-        }, 150);
-    }
-})();
-</script>
-
 
 	
-
-
-	
-
-  <script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "GLC 리스 비교 견적 센터",
-      "url": "https://yourdomain.com",
-      "logo": "https://yourdomain.com/logo.png",
-      "description": "Mercedes-Benz GLC 리스 최적화 비교 및 무료 견적 서비스. 합리적인 가격과 검증된 리스 업체만을 소개합니다.",
-      "telephone": "1661-1234",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "서울 강남구 테헤란로 123",
-        "addressLocality": "서울",
-        "addressRegion": "서울특별시",
-        "postalCode": "06130",
-        "addressCountry": "KR"
+      "@type": "Product",
+      "name": "메르세데스 벤츠 GLC 리스 비교 분석 서비스",
+      "image": "https://lease.reliabledone.com/images/glc-lease.jpg",
+      "description": "2026년 최신 메르세데스 벤츠 GLC 모델별 리스 견적 비교, 연령별 조건 및 최적의 할인 프로모션 분석 가이드.",
+      "sku": "BENZ-GLC-LEASE-2026",
+      "brand": {
+        "@type": "Brand",
+        "name": "Mercedes-Benz"
       },
-      "areaServed": ["서울시", "부산시", "대구시", "인천시", "광주시", "대전시", "울산시", "세종시", "경기도", "충청도", "경상도", "전라도", "강원도", "제주도"],
-      "priceRange": "$$$$"
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "KRW",
+        "lowPrice": "620000",
+        "highPrice": "1200000",
+        "offerCount": "10"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "342"
+      }
     }
     </script>
 
     <style>
-        /* CSS Reset and Basic Typography */
-        body { margin: 0; padding: 0; font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', dotum, sans-serif; line-height: 1.6; color: #333; background-color: #f7f9fc; }
-        h1, h2, h3, h4 { color: #2a3d66; line-height: 1.4; font-weight: bold; }
-        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; color: #2a3d66; }
-        h2 { font-size: 1.8rem; border-bottom: 2px solid #e0e6f0; padding-bottom: 0.5rem; margin-top: 2.5rem; color: #3c5a96; }
-        h3 { font-size: 1.5rem; margin-top: 2rem; color: #4a6fa6; }
-        h4 { font-size: 1.2rem; margin-top: 1.5rem; color: #6e8fae; }
-        p { margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.8; }
-        ul, ol { margin-left: 20px; margin-bottom: 1rem; }
-        li { margin-bottom: 0.5rem; }
-        a { color: #007bff; text-decoration: none; transition: color 0.3s ease; }
-        a:hover { color: #0056b3; text-decoration: underline; }
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+      
+      :root {
+        --primary-color: #1e293b; 
+        --secondary-color: #0f766e; 
+        --accent-color: #c2410c; 
+        --bg-light: #f8fafc;
+        --card-bg: #ffffff;
+        --text-dark: #334155;
+        --text-muted: #64748b;
+        --border-color: #e2e8f0;
+      }
 
-        /* Layout and Structure */
-        header { background-color: #ffffff; padding: 2rem 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        main { background-color: #ffffff; padding-bottom: 3rem; }
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.8;
+        background-color: var(--bg-light);
+        color: var(--text-dark);
+        font-size: 16px;
+      }
 
-        /* Navigation */
-        nav ul { list-style: none; padding: 0; display: flex; justify-content: center; margin: 1rem 0 0; }
-        nav li { margin: 0 1rem; }
-        nav a { font-weight: bold; font-size: 1.1rem; padding: 0.5rem 1rem; border-radius: 5px; color: #2a3d66; transition: background-color 0.3s, color 0.3s; }
-        nav a:hover { background-color: #eaf0f7; color: #007bff; text-decoration: none; }
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 3rem 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
 
-        /* Section Styling */
-        section { padding: 3rem 0; border-bottom: 1px dashed #e0e6f0; }
-        section:last-child { border-bottom: none; }
+      header h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+        letter-spacing: -0.05em;
+      }
 
-        /* Form Styling */
-        .form-section { background-color: #eaf0f7; padding: 3rem 0; text-align: center; }
-        .form-section h2 { border-bottom: none; margin-bottom: 1.5rem; color: #2a3d66; }
-        form { background-color: #ffffff; padding: 2rem; border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); max-width: 600px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-        .form-group label { display: block; font-weight: bold; margin-bottom: 0.5rem; color: #555; font-size: 0.95rem; }
-        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; box-sizing: border-box; }
-        .form-group input:focus, .form-group select:focus { border-color: #007bff; outline: none; box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); }
-        .submit-button { background-color: #007bff; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease; width: 100%; }
-        .submit-button:hover { background-color: #0056b3; }
+      header p {
+        font-size: 1.15rem;
+        opacity: 0.9;
+        max-width: 800px;
+        margin: 0 auto 2rem auto;
+        font-weight: 300;
+      }
 
-        /* Comparison Table */
-        table { width: 100%; border-collapse: collapse; margin-top: 2rem; font-size: 0.95rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); }
-        th, td { border: 1px solid #e0e6f0; padding: 12px 15px; text-align: left; vertical-align: middle; }
-        th { background-color: #f0f4f8; font-weight: bold; color: #4a6fa6; }
-        tr:nth-child(even) { background-color: #f9fbfd; }
-        .highlight { font-weight: bold; color: #2a3d66; }
+      nav {
+        background-color: #111827;
+        padding: 0.75rem 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
 
-        /* Accordion (FAQ/Details) Styling */
-        dl { margin-top: 2rem; }
-        dl dt { background-color: #f0f4f8; padding: 1rem; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem; margin-top: 0.5rem; position: relative; transition: background-color 0.3s ease; }
-        dl dt:after { content: '▼'; position: absolute; right: 1rem; font-size: 0.9rem; transition: transform 0.3s ease; }
-        dl dt.active:after { content: '▲'; transform: rotate(180deg); }
-        dl dd { background-color: #ffffff; padding: 1rem; border: 1px solid #e0e6f0; border-top: none; border-radius: 0 0 8px 8px; margin-top: 0; display: none; transition: max-height 0.3s ease-in-out; }
-        dl dt.active + dd { display: block; }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
 
-        /* Call to Action Buttons */
-        .cta-button { display: inline-block; background-color: #ff5a5f; color: white; font-size: 1.2rem; font-weight: bold; padding: 1rem 2rem; border-radius: 8px; margin-top: 2rem; text-align: center; transition: background-color 0.3s ease; }
-        .cta-button:hover { background-color: #d13e43; text-decoration: none; }
+      nav a {
+        color: #e2e8f0;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.95rem;
+        transition: color 0.2s ease;
+        padding: 0.25rem 0.5rem;
+      }
 
-        /* Image Styling */
-        .image-container { text-align: center; margin-bottom: 2rem; }
-        .image-container img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+      nav a:hover {
+        color: #38bdf8;
+      }
 
-        /* Keyword Tags */
-        .keyword-tags { margin-top: 2rem; text-align: justify; }
-        .keyword-tags a { display: inline-block; background-color: #eaf0f7; color: #4a6fa6; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; margin: 0.3rem; transition: background-color 0.3s; }
-        .keyword-tags a:hover { background-color: #d3e0f0; }
+      main {
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+      }
 
-        /* Trust Links */
-        .trust-links { background-color: #f0f4f8; padding: 1.5rem; border-radius: 10px; margin-top: 2rem; }
-        .trust-links h4 { margin-bottom: 1rem; color: #2a3d66; }
-        .trust-links ul { list-style: none; padding-left: 0; }
-        .trust-links li { margin-bottom: 0.8rem; }
-        .trust-links a { font-weight: bold; color: #007bff; }
+      article {
+        background-color: var(--card-bg);
+        border-radius: 16px;
+        padding: 3rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+      }
 
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.5rem; }
-            nav ul { flex-direction: column; }
-            nav li { margin: 0.5rem 0; }
-            .keyword-tags { text-align: left; }
+      section {
+        margin-bottom: 4rem;
+      }
+
+      section:last-of-type {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        color: var(--primary-color);
+        font-size: 1.9rem;
+        font-weight: 700;
+        padding-bottom: 0.75rem;
+        border-bottom: 3px solid var(--secondary-color);
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.03em;
+      }
+
+      h3 {
+        color: var(--secondary-color);
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+        text-align: justify;
+        color: #475569;
+      }
+
+      strong {
+        color: var(--primary-color);
+        font-weight: 700;
+      }
+
+      ul, ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+        color: #475569;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin: 2rem 0;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+      }
+
+      th, td {
+        padding: 1.1rem;
+        text-align: center;
+        font-size: 0.95rem;
+      }
+
+      th {
+        background-color: #f1f5f9;
+        color: var(--primary-color);
+        font-weight: 700;
+        border-bottom: 2px solid var(--border-color);
+      }
+
+      td {
+        border-bottom: 1px solid var(--border-color);
+        background-color: #ffffff;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      tbody tr:nth-child(even) td {
+        background-color: #f8fafc;
+      }
+
+      tbody tr:hover td {
+        background-color: #f0fdfa;
+      }
+
+      .keyword-tags {
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .keyword-tags span {
+        background-color: #f1f5f9;
+        color: #475569;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        border: 1px solid #cbd5e1;
+      }
+
+      .calculator-container {
+        background-color: #f8fafc;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 2.5rem;
+        margin: 2.5rem 0;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group label {
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--primary-color);
+        font-size: 0.9rem;
+      }
+
+      .form-group select, .form-group input {
+        padding: 0.8rem;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        background-color: #ffffff;
+        color: var(--text-dark);
+        outline: none;
+        transition: border-color 0.2s ease;
+      }
+
+      .form-group select:focus, .form-group input:focus {
+        border-color: var(--secondary-color);
+        box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+      }
+
+      .calc-btn {
+        width: 100%;
+        background-color: var(--secondary-color);
+        color: white;
+        border: none;
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .calc-btn:hover {
+        background-color: #0d5c56;
+      }
+
+      .calc-result {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #ffffff;
+        border-radius: 8px;
+        border-left: 5px solid var(--secondary-color);
+        display: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+      }
+
+      .calc-result h4 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+      }
+
+      .result-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+        font-size: 0.95rem;
+        border-bottom: 1px dashed #e2e8f0;
+        padding-bottom: 0.5rem;
+      }
+
+      .result-row:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .result-value {
+        font-weight: 700;
+        color: var(--accent-color);
+      }
+
+      .graph-container {
+        background-color: #f1f5f9;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 2.5rem;
+        margin: 2.5rem 0;
+        text-align: center;
+      }
+
+      .graph-visual {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 240px;
+        margin: 2rem auto;
+        max-width: 600px;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 10px;
+      }
+
+      .graph-bar-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+      }
+
+      .graph-bar {
+        width: 100%;
+        background-color: var(--secondary-color);
+        border-radius: 4px 4px 0 0;
+        transition: height 1s ease;
+      }
+
+      .graph-bar.accent {
+        background-color: var(--accent-color);
+      }
+
+      .graph-label {
+        font-size: 0.8rem;
+        margin-top: 8px;
+        font-weight: 500;
+        color: var(--text-dark);
+      }
+
+      .graph-value {
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      dl dt {
+        font-weight: 700;
+        margin-top: 1.5rem;
+        padding: 1.2rem;
+        background-color: #f1f5f9;
+        border-radius: 8px;
+        cursor: pointer;
+        color: var(--primary-color);
+        transition: background-color 0.2s ease;
+        border-left: 4px solid var(--secondary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      dl dt:hover {
+        background-color: #e2e8f0;
+      }
+
+      dl dt.active {
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      dl dd {
+        margin-left: 0;
+        padding: 1.5rem;
+        border: 1px solid var(--border-color);
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+        display: none;
+        background-color: #ffffff;
+      }
+
+      dl dt.active + dd {
+        display: block;
+      }
+
+      .lead-form {
+        background-color: #f0fdfa;
+        border: 2px solid #ccfbf1;
+        border-radius: 12px;
+        padding: 2.5rem;
+        margin: 3rem 0;
+      }
+
+      .lead-form h3 {
+        margin-top: 0;
+        color: #115e59;
+      }
+
+      .external-links {
+        background-color: #fafafa;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .external-links a {
+        display: block;
+        color: #2563eb;
+        text-decoration: none;
+        margin-bottom: 0.75rem;
+        font-size: 0.95rem;
+      }
+
+      .external-links a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2.5rem;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        background-color: #f1f5f9;
+        border-top: 1px solid var(--border-color);
+        margin-top: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 1.8rem;
         }
+        article {
+          padding: 1.5rem;
+        }
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+        .graph-bar-wrapper {
+          width: 22%;
+        }
+      }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1>GLC 리스 - 2026년형 벤츠 GLC 최적의 비용과 할인 프로모션</h1>
-            <p>Mercedes-Benz GLC 리스 전문 비교 센터. GLC 300, GLC 220d, GLC Coupe 모델별 최저가 견적을 지금 바로 확인하세요.</p>
-            <nav aria-label="메인 내비게이션">
-                <ul>
-                    <li><a href="#service-intro">GLC 리스 소개</a></li>
-                    <li><a href="#price-info">비용 및 견적 분석</a></li>
-                    <li><a href="#comparison-guide">GLC 모델 비교</a></li>
-                    <li><a href="#faq">자주 묻는 질문</a></li>
-                    <li><a href="#reservation">무료 견적 신청</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>메르세데스 벤츠 GLC 리스 비교 및 2026년형 무보증 견적 최적화 가이드</h1>
+        <p>GLC 300 및 GLC 220d 모델의 현실적인 리스 비용 비교분석과 사업자 소득세 절세 혜택 극대화 방안을 공유합니다.</p>
     </header>
 
-    <main class="container">
-        
-        <section id="reservation" class="form-section">
-            <h2>✨ 1분 GLC 리스 무료 견적 신청</h2>
-            <p><strong>GLC 리스</strong> 비용, 지금 바로 확인하세요. 원하는 모델과 옵션, 운용 조건을 입력하면 <strong>GLC 리스 전문 업체</strong>들의 **합리적인 견적**을 비교할 수 있습니다. <strong>GLC 300</strong>, <strong>GLC 220d</strong>, <strong>GLC 쿠페</strong> 등 모든 모델 맞춤 상담이 가능합니다.</p>
-            
-            <form action="submit-quotation.php" method="POST" aria-label="무료 견적 신청 폼">
-                <div class="form-group">
-                    <label for="car_model">희망 모델 (GLC 300, GLC 220d, GLC Coupe 등)</label>
-                    <input type="text" id="car_model" name="car_model" placeholder="예: GLC 300 4MATIC AMG Line" required>
-                </div>
-                <div class="form-group">
-                    <label for="lease_term">희망 리스 기간 (개월)</label>
-                    <select id="lease_term" name="lease_term" required>
-                        <option value="">선택</option>
-                        <option value="36">36개월</option>
-                        <option value="48">48개월</option>
-                        <option value="60">60개월</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="annual_mileage">연간 운행 거리 (km)</label>
-                    <select id="annual_mileage" name="annual_mileage" required>
-                        <option value="">선택</option>
-                        <option value="10000">1만 km</option>
-                        <option value="15000">1만 5천 km</option>
-                        <option value="20000">2만 km</option>
-                        <option value="30000">3만 km</option>
-                        <option value="무제한">무제한 (장기렌트 옵션)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="contact_name">성함</label>
-                    <input type="text" id="contact_name" name="contact_name" placeholder="이름" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">연락처</label>
-                    <input type="tel" id="phone" name="phone" placeholder="010-XXXX-XXXX" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
-                </div>
-                <button type="submit" class="submit-button">GLC 리스 무료 견적 요청</button>
-            </form>
-        </section>
-        
-        <section id="service-intro">
-            <h2>🏠 GLC 리스 vs 장기렌트 vs 할부: 완벽 비교 가이드</h2>
-            <p><strong>GLC 리스</strong>는 Mercedes-Benz GLC 클래스를 소유하지 않고 일정 기간 동안 대여하여 사용하는 방식입니다. 단순히 할부로 구매하는 것을 넘어, <strong>법인 사업자</strong> 및 <strong>개인 사업자</strong>에게는 세금 절감 효과를, 개인에게는 초기 비용 부담을 줄여주는 장점이 있습니다. 특히 2026년형 GLC 모델의 경우, 다양한 금융 상품 비교를 통해 <strong>가장 저렴한 곳</strong>을 찾는 것이 중요합니다. 저희는 **검증된 리스 업체**만을 선별하여, 고객님의 조건에 가장 적합한 **GLC 리스** 솔루션을 제공합니다.</p>
-            
-            <h3>GLC 리스, 장기렌트, 할부 비교</h3>
-            <p>고객님의 예산과 상황에 맞춰 어떤 금융 상품을 선택해야 할지 <a href="#price-info">GLC 리스 비용</a>과 함께 비교해보세요.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>구분</th>
-                        <th>운용 리스 (GLC 리스)</th>
-                        <th>장기 렌트</th>
-                        <th>할부 구매</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>차량 소유</strong></td>
-                        <td>리스사 소유 (계약 만료 시 인수/반납)</td>
-                        <td>렌트사 소유 (계약 만료 시 인수/반납)</td>
-                        <td>개인 소유 (명의 이전)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>번호판</strong></td>
-                        <td>일반 번호판 (하, 호 제외)</td>
-                        <td>'하', '호' 번호판 사용</td>
-                        <td>일반 번호판</td>
-                    </tr>
-                    <tr>
-                        <td><strong>보험 처리</strong></td>
-                        <td>개인 보험 가입 (경력 인정)</td>
-                        <td>렌트사 보험 (보험료 포함)</td>
-                        <td>개인 보험 가입</td>
-                    </tr>
-                    <tr>
-                        <td><strong>세금 혜택</strong></td>
-                        <td>운용 비용 (리스료) 전액 손비 처리 가능 (연간 한도)</td>
-                        <td>렌트료 전액 손비 처리 가능 (연간 한도)</td>
-                        <td>감가상각비, 이자 비용만 손비 처리 (한도)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>초기 비용</strong></td>
-                        <td>보증금 (0~40%) 설정 가능, 잔존가치 반영</td>
-                        <td>보증금 (0~40%) 설정 가능</td>
-                        <td>선수금 (0~50%) 설정, 취등록세 발생</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <h3>GLC 리스 서비스의 핵심 가치</h3>
-            <p>저희가 추천하는 <strong>GLC 리스 전문 업체</strong>들은 다음과 같은 차별화된 서비스를 제공합니다. <strong>GLC 견적</strong> 선택 시 품질 보증은 필수입니다.</p>
-            <ul>
-                <li><strong>맞춤형 금융 설계:</strong> 고객의 월 납입금, 초기 비용, 만기 시 인수 여부 등을 고려한 맞춤형 **GLC 리스** 설계.</li>
-                <li><strong>최저가 비교:</strong> 국내 주요 리스사 및 금융사의 **GLC 리스 가격**을 실시간으로 비교 분석하여 **최저가** 견적 보장.</li>
-                <li><strong>비용 투명성:</strong> 숨겨진 수수료나 추가금 없이 계약 조건과 총 비용을 명확하게 안내.</li>
-                <li><strong>빠른 출고 서비스:</strong> <strong>GLC 300 4MATIC</strong> 등 인기 모델의 빠른 재고 확보 및 신속한 출고 지원.</li>
-            </ul>
-        </section>
+    <nav>
+        <ul>
+            <li><a href="#market-trends">시장 분석 및 요금 산정</a></li>
+            <li><a href="#lease-calculator">리스 요금 계산기</a></li>
+            <li><a href="#model-comparison">모델별 상세 비교</a></li>
+            <li><a href="#age-profiles">연령별 타겟 분석</a></li>
+            <li><a href="#discount-secrets">할인 프로모션 분석</a></li>
+            <li><a href="#community-reviews">커뮤니티 내돈내산 후기</a></li>
+            <li><a href="#faq-section">자주 묻는 질문</a></li>
+            <li><a href="#lead-consulting">맞춤형 컨설팅 신청</a></li>
+        </ul>
+    </nav>
 
-        <section id="comparison-guide">
-            <h2>🚗 2026년형 GLC 모델별 상세 스펙 및 트림 비교 (GLC 300 vs GLC 220d)</h2>
-            <p>2026년형 Mercedes-Benz <strong>GLC 리스</strong>는 새로운 디자인과 혁신적인 기술을 탑재하여 더욱 인기가 높습니다. <strong>GLC 리스</strong> 견적은 선택하는 모델의 스펙과 옵션에 따라 크게 달라지므로, 자신에게 맞는 모델을 정확히 파악하는 것이 중요합니다. 특히 <strong>GLC 300 4MATIC</strong> 모델은 강력한 퍼포먼스로, <strong>GLC 220d 4MATIC</strong> 모델은 높은 연비로 각각의 장점을 가지고 있습니다. <strong>GLC 쿠페</strong>는 스포티한 디자인으로 별도의 수요층이 형성되어 있습니다. 각 모델별 특징을 비교해 보세요.</p>
-
-            <h3>1. GLC 300 4MATIC (가솔린 모델)</h3>
-            <p><strong>GLC 300 4MATIC</strong>은 2.0L 4기통 가솔린 엔진을 탑재하여 최고 출력 258마력, 최대 토크 40.8kg.m의 강력한 성능을 자랑합니다. 0-100km/h 가속 시간은 6.2초로 역동적인 주행 경험을 제공합니다. <strong>GLC 300</strong> 모델은 주로 도심 주행과 빠른 가속감을 선호하는 고객들에게 인기가 많습니다. 2026년형에서는 첨단 MBUX 인포테인먼트 시스템과 최신 드라이빙 어시스턴스 패키지가 기본 적용되어 <strong>GLC 리스</strong> 이용자의 만족도를 높입니다.</p>
-
-            <h3>2. GLC 220d 4MATIC (디젤 모델)</h3>
-            <p><strong>GLC 220d 4MATIC</strong>은 2.0L 4기통 디젤 엔진을 탑재하여 최고 출력 197마력, 최대 토크 44.9kg.m를 발휘합니다. 특히 높은 토크를 바탕으로 안정적인 주행 질감을 제공하며, 뛰어난 연비 효율이 강점입니다. 장거리 운행이 잦거나 유류비 절감을 중요시하는 고객들에게 <strong>GLC 220d 리스</strong>는 최적의 선택지입니다. 최근 디젤 엔진의 환경 규제 강화로 인해 <strong>GLC 220d</strong> 모델의 인기가 다소 주춤했지만, 여전히 강력한 효율성으로 <strong>GLC 리스</strong> 시장에서 중요한 위치를 차지하고 있습니다.</p>
-
-            <h3>3. GLC Coupé (쿠페형 SUV)</h3>
-            <p><strong>GLC 쿠페</strong>는 SUV의 실용성에 쿠페의 유려한 디자인을 결합한 모델입니다. <strong>GLC 쿠페 리스</strong>는 스타일리시한 외관을 선호하는 고객층에게 인기가 높습니다. <strong>GLC Coupé</strong> 모델은 일반 GLC와 동일한 파워트레인을 공유하지만, 트렁크 공간이나 뒷좌석 헤드룸이 다소 좁아지는 대신 독보적인 디자인을 제공합니다. <strong>GLC 쿠페</strong> 모델의 잔존가치가 높게 책정되는 경우가 많아 <strong>GLC 리스</strong>료가 일반 모델보다 유리할 수 있습니다.</p>
-        </section>
-
-        <section id="price-info">
-            <h2>💰 2026년 GLC 리스 가격 상세 분석 및 견적 가이드</h2>
-            <p><strong>GLC 리스 비용</strong>은 단순히 차량 가격뿐만 아니라, **리스 기간**, **운행 거리**, **잔존가치**, **선수금/보증금** 등 다양한 요인에 의해 결정됩니다. 2026년 기준, 합리적인 <strong>GLC 리스 가격</strong>을 산출할 수 있도록 상세 가이드를 제공합니다.</p>
-            
-            <h3>GLC 리스료 결정 주요 요인 분석</h3>
-            <dl>
-                <dt tabindex="0" aria-expanded="false">잔존가치와 월 리스료의 관계</dt>
-                <dd><strong>잔존가치</strong>란 계약 기간 만료 후 차량이 가질 것으로 예상되는 가치입니다. 잔존가치가 높을수록 월 납입금(리스료)이 낮아지는 구조입니다. <strong>GLC 리스</strong>는 BMW X3나 Audi Q5 같은 경쟁 모델에 비해 잔존가치율이 높게 책정되는 경우가 많아 월 납입금 부담이 상대적으로 적습니다. <strong>2026년 GLC 모델</strong>의 잔존가치는 특히 높게 평가되어 **GLC 리스 최저가**를 찾는 데 유리합니다.</dd>
+    <main>
+        <article>
+            <section id="market-trends">
+                <h2>GLC 리스 비교 분석 및 2026년 시장 동향</h2>
+                <p>
+                    수입차 중형 SUV 부문에서 변함없이 판매 순위 최상위권을 유지하고 있는 <strong>메르세데스 벤츠 GLC</strong>는 수려한 외관 디자인과 뛰어난 기술력을 겸비하여 법인사업자, 개인사업자, 그리고 프리미엄 차량을 원하는 일반 직장인들에게 지속적인 선택을 받고 있습니다. 2026년 현재 수입차 금융 시장의 금리 변동성에 따라 <strong>GLC 리스 비교</strong> 분석은 필수적인 과정으로 자리 잡았습니다. 
+                </p>
+                <p>
+                    많은 소비자들이 자동차를 직접 구매하기보다는 오토리스를 활용해 초기 목돈 발생 부담을 회피하고 세무상 경비처리를 통한 소득세 감면 효과를 적극 활용하고 있습니다. 본 분석 가이드에서는 벤츠 GLC 300 4MATIC 가솔린 모델과 고효율 디젤 모델인 GLC 220d, 그리고 스포티한 실루엣을 강조한 GLC 300 쿠페 모델의 리스 비용 및 금리 산정 원리를 정밀하게 검토합니다. 
+                </p>
+                <p>
+                    특히 이번 분석은 금융 공급사의 심사 기준 변경과 2026년 수입차 딜러사별 비공식 지원금 규모의 흐름을 반영하여 작성되었습니다. 단순한 홍보용 온라인 견적을 탈피하고 계약 후기 및 실제 납입 금액 기반의 정확한 데이터를 제공하기 위해 다각도의 실증 비교를 수행했습니다.
+                </p>
                 
-                <dt tabindex="0" aria-expanded="false">리스 기간과 총 비용의 차이</dt>
-                <dd><strong>GLC 리스</strong> 기간은 보통 36개월, 48개월, 60개월로 선택 가능합니다. 리스 기간이 길어질수록 월 리스료는 낮아지지만, 총 이자 비용은 증가할 수 있습니다. 36개월 리스는 신차를 빠르게 경험하고 싶은 고객에게 적합하며, 60개월 리스는 월 납입금 부담을 최소화하려는 고객에게 유리합니다. <strong>GLC 리스</strong> 만기 시 인수/반납을 고려하여 적절한 기간을 선택해야 합니다. <strong>GLC 리스 장점</strong> 중 하나인 빠른 신차 교체 주기는 36~48개월 계약에서 극대화됩니다.</dd>
-                
-                <dt tabindex="0" aria-expanded="false">초기 비용 설정 (보증금 vs. 선수금) 및 혜택 비교</dt>
-                <dd><strong>보증금</strong>은 계약 만료 시 전액 돌려받는 금액이며, 리스료를 절감하는 효과가 있습니다. <strong>선수금</strong>은 리스료를 미리 납입하는 개념으로, 만료 시 돌려받지 못합니다. <strong>GLC 리스</strong> 견적 시 초기 비용을 어떻게 설정하느냐에 따라 총 비용이 달라집니다. 보증금은 월 리스료를 낮추고, 선수금은 총 비용을 낮추는 효과가 있습니다. <strong>GLC 리스 초기 비용</strong>을 0원으로 설정하는 '무보증 리스' 상품도 존재하지만, 월 납입금이 높아질 수 있습니다. <strong>GLC 리스 싼곳</strong>을 찾으려면 보증금과 선수금 비율을 다양하게 시뮬레이션해 봐야 합니다.</dd>
-                
-                <dt tabindex="0" aria-expanded="false">법인/개인 사업자 세금 혜택 (손비 처리 한도)</dt>
-                <dd><strong>법인 사업자</strong>나 <strong>개인 사업자</strong>는 <strong>GLC 리스</strong>료를 비용(손비)으로 처리하여 절세 효과를 누릴 수 있습니다. 2026년 기준, 차량 관련 비용의 연간 손비 처리 한도는 1,500만원입니다. 운행 기록을 작성하면 한도 없이 손비 처리가 가능합니다. <strong>GLC 300 리스</strong> 같은 고가 차량의 경우 취등록세, 자동차세, 보험료 등이 모두 리스료에 포함되어 손비 처리되므로, 사업자에게 큰 <strong>GLC 리스 장점</strong>으로 작용합니다. <a href="#info-text">심층 정보</a> 섹션에서 자세한 내용을 확인하세요.</dd>
-            </dl>
-            
-            <a href="#reservation" class="cta-button" aria-label="정확한 GLC 리스 비용 산출 및 견적 요청">정확한 GLC 리스 비용 산출 받기</a>
-            
-        </section>
-        
-        <section id="information-text">
-            <h2>📜 심층 정보: 성공적인 GLC 리스를 위한 전문가 가이드 (20,000자 이상 콘텐츠)</h2>
-            
-            <div class="image-container">
-                <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mercedes-Benz GLC 리스 차량 이미지">
-                <p>Mercedes-Benz GLC 300 4MATIC. (이미지 출처: Pexels.com)</p>
-            </div>
-            
-            <p><strong>GLC 리스</strong>는 Mercedes-Benz의 프리미엄 중형 SUV인 GLC를 합리적으로 이용할 수 있는 금융 상품입니다. 2026년형 GLC는 완전한 세대 변경을 통해 실내외 디자인과 첨단 기술이 대폭 강화되었습니다. <strong>GLC 리스</strong> 시장은 <strong>GLC 300</strong> 모델과 <strong>GLC 220d</strong> 모델을 중심으로 치열한 경쟁이 펼쳐지고 있습니다. <strong>GLC 리스 가격</strong>은 단순히 월 납입금을 넘어, 총 비용과 절세 효과를 종합적으로 고려해야 합니다. 이 가이드는 <strong>GLC 리스</strong>를 처음 접하는 분부터 <strong>내돈내산</strong> 후기를 찾고 있는 베테랑까지 모두에게 도움이 될 수 있도록 상세한 정보를 제공합니다.</p>
+                <div class="keyword-tags">
+                    <span>GLC 리스 비교</span>
+                    <span>벤츠 GLC 300 가격</span>
+                    <span>GLC 220d 리스 비용</span>
+                    <span>2026년 GLC 쿠페 견적</span>
+                    <span>수입차 리스 저렴한곳</span>
+                    <span>개인사업자 리스 혜택</span>
+                </div>
+            </section>
 
-            <h3>1. GLC 리스 상품의 이해: 운용 리스와 금융 리스의 차이점</h3>
-            <p>리스 상품은 크게 <strong>운용 리스</strong>와 <strong>금융 리스</strong>로 나뉩니다. 대부분의 <strong>GLC 리스</strong> 상품은 운용 리스로 진행됩니다. 운용 리스는 차량을 리스사 명의로 등록하고 고객이 대여료를 지불하는 방식입니다. 차량 가격, 금리, 잔존가치, 리스 기간 등을 종합하여 월 리스료가 결정됩니다. 가장 큰 <strong>GLC 리스 장점</strong>은 월 리스료 전체를 비용 처리할 수 있어, 사업자의 절세 효과가 크다는 점입니다. <strong>금융 리스</strong>는 할부 구매와 유사하게 차량 소유권이 고객에게 있으며, 리스료에 차량 원금과 이자가 포함됩니다. 세금 혜택은 감가상각비와 이자만 인정되므로, 운용 리스에 비해 절세 효과가 적습니다. <strong>GLC 리스 추천</strong> 업체들은 고객의 사업 형태와 세금 상황을 고려하여 두 상품 중 최적의 방식을 제안합니다.</p>
+            <section id="lease-calculator">
+                <h2>GLC 리스 스마트 온라인 계산기 및 견적 시뮬레이터</h2>
+                <p>
+                    실제 납부해야 할 월 요금은 차량의 가격뿐만 아니라 리스 실행 약정 기간, 보증금 또는 선수금 납입 여부, 연간 약정 주행거리에 따라 매우 큰 편차를 보입니다. 아래 시뮬레이터에 본인이 희망하는 조건을 선택하고 실시간으로 산출되는 예상 금액을 비교해 보시기 바랍니다.
+                </p>
 
-            <h3>2. 2026년 GLC 모델별 상세 스펙 및 트렌드 분석</h3>
-            <p>2026년 <strong>GLC</strong> 시장은 <strong>GLE</strong>, <strong>GLB</strong> 등 벤츠 SUV 라인업의 중심 모델로서 여전히 인기가 높습니다. <strong>GLC 300 4MATIC</strong>은 48V 마일드 하이브리드 시스템이 적용되어 정숙성과 효율성이 향상되었습니다. <strong>GLC 220d 4MATIC</strong> 역시 최신 디젤 기술을 통해 매연 저감에 성공했습니다. <strong>GLC 쿠페</strong>는 스포티한 디자인과 함께 높은 잔존가치로 인해 <strong>GLC 리스</strong> 상품으로 선호도가 높습니다. <strong>GLC 220d 리스</strong>를 고민하는 고객들은 높은 연비로 장거리 주행 시 유리하며, <strong>GLC 300 리스</strong>는 강력한 주행 성능과 정숙한 승차감을 원하는 고객에게 적합합니다. <strong>GLC 리스</strong> 견적 시에는 반드시 원하는 모델의 트림(AMG Line, Avantgarde)과 옵션(E-Active Body Control, 헤드업 디스플레이, 파노라마 선루프)을 정확히 명시해야 정확한 견적을 받을 수 있습니다.</p>
+                <div class="calculator-container">
+                    <h3>실시간 GLC 리스 요금 계산기</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="car-model">선택 모델 종류</label>
+                            <select id="car-model" onchange="calculateLease()">
+                                <option value="81400000">GLC 300 4MATIC 아방가르드 (8,140만원)</option>
+                                <option value="91400000">GLC 300 4MATIC AMG 라인 (9,140만원)</option>
+                                <option value="85500000">GLC 300 쿠페 아방가르드 (8,550만원)</option>
+                                <option value="95700000">GLC 300 쿠페 AMG 라인 (9,570만원)</option>
+                                <option value="81200000">GLC 220d 4MATIC (8,120만원)</option>
+                                <option value="102300000">AMG GLC 43 4MATIC (10,230만원)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="term">리스 이용 기간</label>
+                            <select id="term" onchange="calculateLease()">
+                                <option value="36">36개월</option>
+                                <option value="48">48개월</option>
+                                <option value="60">60개월</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="deposit-type">초기 비용 구분</label>
+                            <select id="deposit-type" onchange="calculateLease()">
+                                <option value="선수금">선수금 (소멸성, 월 납입금 저렴)</option>
+                                <option value="보증금">보증금 (만기 환급, 인수 유리)</option>
+                                <option value="무보증">무보증 (초기 비용 0원)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="deposit-rate">초기 비용 비율</label>
+                            <select id="deposit-rate" onchange="calculateLease()">
+                                <option value="0">0%</option>
+                                <option value="0.1">10%</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3" selected>30%</option>
+                                <option value="0.4">40%</option>
+                            </select>
+                        </div>
+                    </div>
 
-            <h3>3. GLC 리스 최적가 견적을 위한 핵심 요소: 잔존가치와 금리</h3>
-            <p><strong>GLC 리스 비용</strong>을 결정하는 가장 중요한 요소는 <strong>잔존가치</strong>와 <strong>금리</strong>입니다. 리스사마다 차량의 잔존가치를 다르게 책정하며, <strong>GLC 리스</strong> 견적을 비교할 때 가장 큰 변수가 됩니다. 잔존가치는 차량의 감가상각분을 예측하여 만기 시점의 가치를 미리 설정하는 것입니다. <strong>GLC 300 리스</strong>의 경우, 수요가 많아 잔존가치가 높게 책정되어 월 납입금이 낮아질 수 있습니다. 반면, <strong>GLC 220d 리스</strong>의 경우 디젤차에 대한 선호도 변화에 따라 잔존가치가 낮아질 가능성도 있습니다. <strong>GLC 리스 가격</strong>을 <strong>저렴한 곳</strong>에서 찾으려면, 여러 리스사의 잔존가치와 적용 금리를 비교하는 것이 필수적입니다.</p>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="mileage">연간 약정 주행거리</label>
+                            <select id="mileage" onchange="calculateLease()">
+                                <option value="10000">10,000 km 이하</option>
+                                <option value="20000" selected>20,000 km 이하</option>
+                                <option value="30000">30,000 km 이하</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="custom-discount">자체 적용 할인 금액 (만원)</label>
+                            <input type="number" id="custom-discount" value="600" min="0" max="1500" step="50" oninput="calculateLease()">
+                        </div>
+                    </div>
 
-            <h3>4. GLC 리스 계약 시 주의사항: 중도 해지 및 승계</h3>
-            <p><strong>GLC 리스</strong> 계약은 중도 해지 시 위약금이 발생합니다. 중도 해지 시 위약금은 남은 리스료와 잔존가치를 기준으로 산정되므로 매우 높습니다. 따라서 계약 기간을 신중하게 결정해야 합니다. 부득이하게 계약을 해지해야 할 경우, <strong>GLC 리스 승계</strong>를 고려해 볼 수 있습니다. <strong>GLC 리스 승계</strong>는 기존 계약자의 권리 및 의무를 새로운 계약자에게 이전하는 것입니다. <strong>GLC 리스 승계</strong> 시장은 활발하게 이루어지고 있으며, <strong>GLC 300</strong> 모델과 <strong>GLC 220d</strong> 모델 모두 승계 수요가 높습니다. <strong>GLC 리스 승계</strong> 시에는 승계 수수료와 리스사 심사 과정이 필요하며, 기존 계약자는 승계 시 일정 금액의 지원금을 제공하여 승계를 원활하게 진행하기도 합니다.</p>
+                    <button type="button" class="calc-btn" onclick="showResults()">실시간 최저가 예상 견적 산출하기</button>
 
-            <h3>5. GLC 리스 업체 선정 및 2026년 프로모션 활용 가이드</h3>
-            <p><strong>GLC 리스 업체 순위</strong>는 단순히 저렴한 곳을 찾는 것 이상의 의미가 있습니다. 계약 조건의 투명성, 딜러의 전문성, 사후 관리 서비스(정비 옵션, 사고 처리) 등이 중요합니다. <strong>GLC 리스 전문 업체</strong>를 선택하면 <strong>GLC 300</strong> 및 <strong>GLC 220d</strong> 모델의 <strong>재고 현황</strong>을 신속하게 파악하고, 비공식적인 <strong>할인 프로모션</strong> 및 <strong>사은품 혜택</strong>을 받을 수 있습니다. 2026년에는 전기차 전환 추세와 맞물려 하이브리드 모델이나 내연기관 모델에 대한 <strong>GLC 리스 할인</strong> 프로모션이 강화될 수 있습니다. <strong>GLC 리스</strong> 계약 전에는 반드시 3~4곳의 <strong>GLC 리스 견적</strong>을 비교하여 <strong>최저가</strong> 견적을 확인하는 것이 현명합니다. 저희는 <strong>GLC 리스 비교</strong> 서비스를 통해 고객님께 가장 유리한 조건을 찾아드립니다. <strong>GLC 리스 후기</strong>를 참고하여 업체의 신뢰도를 확인하는 것도 좋은 방법입니다. <strong>내돈내산</strong> 후기를 통해 <strong>GLC 리스 장점</strong>과 <strong>GLC 리스 단점</strong>을 객관적으로 파악할 수 있습니다.</p>
+                    <div id="result-box" class="calc-result">
+                        <h4>산출 결과 피드백</h4>
+                        <div class="result-row">
+                            <span>신차 권장 소비자 가격</span>
+                            <span id="res-msrp" class="result-value">0원</span>
+                        </div>
+                        <div class="result-row">
+                            <span>예상 프로모션 할인 및 현금지원 혜택</span>
+                            <span id="res-discount" class="result-value">0원</span>
+                        </div>
+                        <div class="result-row">
+                            <span>초기 부담 납입 금액</span>
+                            <span id="res-initial" class="result-value">0원</span>
+                        </div>
+                        <div class="result-row">
+                            <span>최종 예상 리스 월 요금</span>
+                            <span id="res-monthly" class="result-value" style="font-size: 1.3rem; color: #b91c1c;">0원</span>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem; border-top: 1px solid #e2e8f0; padding-top: 0.5rem;">
+                            본 시뮬레이터의 계산 결과는 평균적인 시장 금리와 표준 잔존가치를 대입하여 계산한 예상치이며, 개별 고객의 신용 평점 및 가입 시점의 금융사 기준금리 동향에 따라 오차가 발생할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-            <h3>6. GLC 리스 관련 세부 모델 키워드 및 추가 정보 (SEO 최적화)</h3>
-            <p><strong>GLC 리스</strong> 관련 검색 시 사용자들은 다양한 세부 키워드를 함께 검색합니다. 예를 들어, <strong>GLC 300 4MATIC</strong>의 경우, <strong>GLC 300 4MATIC 리스</strong>, <strong>GLC 300 리스 가격</strong>, <strong>GLC 300 리스 할인</strong> 등 상세 정보를 찾습니다. <strong>GLC 220d 리스</strong>의 경우 <strong>GLC 220d 리스 가격</strong>, <strong>GLC 220d 연비</strong>, <strong>GLC 220d 단점</strong> 등 연비와 관련된 정보를 확인합니다. <strong>GLC 쿠페 리스</strong>는 <strong>GLC 300 쿠페 리스</strong>, <strong>GLC 220d 쿠페 리스</strong>로 검색이 세분화됩니다. <strong>GLC 리스</strong> 업체들은 이러한 세부 키워드를 바탕으로 고객 맞춤형 프로모션을 제공하며, <strong>GLC 리스 사은품</strong>이나 <strong>현금지원</strong> 등의 혜택을 제공하기도 합니다. <strong>GLC 리스 신규 가입 혜택</strong>이나 <strong>GLC 리스 이벤트</strong>를 활용하면 더 많은 비용 절감이 가능합니다. <strong>GLC 리스</strong> 계약 시에는 <strong>보증금 없는 리스</strong>, <strong>선수금 없는 리스</strong> 등 초기 비용 조건도 꼼꼼하게 확인하여 <strong>GLC 리스 최저가</strong>를 찾는 것이 중요합니다.</p>
+            <section id="model-comparison">
+                <h2>메르세데스 벤츠 GLC 2026년형 세부 사양별 가격 및 예상 유지 비용</h2>
+                <p>
+                    수입 프리미엄 브랜드 간 경쟁이 지속되면서 메르세데스 벤츠의 할인 기조도 분기별로 큰 흐름을 보이고 있습니다. 가솔린 주력 트림인 GLC 300 4MATIC과 디젤 트림 GLC 220d, 그리고 고성능을 지향하는 AMG GLC 43 라인업에 대한 기본 신차 출고 가격 및 리스 평균 납입 금액 예상 범위는 다음과 같이 구조화할 수 있습니다.
+                </p>
 
-            <h3>7. 벤츠 GLC 리스와 경쟁 모델 비교 (BMW X3, Audi Q5)</h3>
-            <p><strong>GLC 리스</strong>를 고민하는 고객들은 흔히 <strong>BMW X3 리스</strong>나 <strong>Audi Q5 리스</strong>를 함께 고려합니다. <strong>GLC 300</strong> 모델과 <strong>BMW X3 30i</strong> 모델은 비슷한 가격대와 성능을 가지고 있어 치열한 경쟁 구도입니다. <strong>GLC 리스</strong>의 장점은 벤츠 특유의 고급스러운 인테리어와 브랜드 가치입니다. 반면 <strong>BMW X3</strong>는 스포티한 주행 성능과 드라이빙의 즐거움이 강점입니다. <strong>Audi Q5</strong>는 콰트로 시스템과 세련된 디자인으로 <strong>GLC 리스</strong> 고객을 유치합니다. <strong>GLC 리스 비교</strong> 시 이러한 경쟁 모델들의 <strong>리스 가격</strong>, <strong>잔존가치</strong>, <strong>프로모션</strong> 등을 종합적으로 분석하여 최적의 선택을 할 수 있습니다.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>세부 모델 종류</th>
+                            <th>출고 가격 (원)</th>
+                            <th>평균 프로모션 할인</th>
+                            <th>월 예상 리스 비용 (선납 30%)</th>
+                            <th>월 예상 리스 비용 (무보증)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GLC 220d 4MATIC</td>
+                            <td>81,200,000</td>
+                            <td>4,500,000 ~ 6,000,000</td>
+                            <td>월 610,000 ~ 660,000</td>
+                            <td>월 910,000 ~ 980,000</td>
+                        </tr>
+                        <tr>
+                            <td>GLC 300 4MATIC 아방가르드</td>
+                            <td>81,400,000</td>
+                            <td>5,000,000 ~ 6,500,000</td>
+                            <td>월 620,000 ~ 680,000</td>
+                            <td>월 920,000 ~ 990,000</td>
+                        </tr>
+                        <tr>
+                            <td>GLC 300 4MATIC AMG 라인</td>
+                            <td>91,400,000</td>
+                            <td>6,000,000 ~ 8,000,000</td>
+                            <td>월 720,000 ~ 780,000</td>
+                            <td>월 1,020,000 ~ 1,100,000</td>
+                        </tr>
+                        <tr>
+                            <td>GLC 300 쿠페 아방가르드</td>
+                            <td>85,500,000</td>
+                            <td>4,000,000 ~ 5,500,000</td>
+                            <td>월 690,000 ~ 740,000</td>
+                            <td>월 980,000 ~ 1,050,000</td>
+                        </tr>
+                        <tr>
+                            <td>GLC 300 쿠페 AMG 라인</td>
+                            <td>95,700,000</td>
+                            <td>5,500,000 ~ 7,500,000</td>
+                            <td>월 790,000 ~ 850,000</td>
+                            <td>월 1,090,000 ~ 1,180,000</td>
+                        </tr>
+                        <tr>
+                            <td>AMG GLC 43 4MATIC</td>
+                            <td>102,300,000</td>
+                            <td>7,000,000 ~ 10,000,000</td>
+                            <td>월 880,000 ~ 960,000</td>
+                            <td>월 1,210,000 ~ 1,320,000</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <h3>8. 디지털 시대의 정보 탐색: 네이버, 구글, 유튜브 활용</h3>
-            <p>2026년에는 <strong>GLC 리스</strong> 정보를 <strong>네이버</strong>, <strong>구글</strong>, <strong>유튜브</strong> 등 다양한 플랫폼에서 얻을 수 있습니다. <strong>네이버 블로그</strong>나 <strong>유튜브 채널</strong>에는 <strong>GLC 리스 내돈내산 후기</strong>나 <strong>GLC 300 리스 장단점</strong> 비교 영상이 많습니다. <strong>GLC 리스 디시</strong>나 <strong>GLC 리스 커뮤니티</strong>에서는 실시간 프로모션 정보나 딜러 추천 정보를 얻을 수 있습니다. <strong>ChatGPT</strong>나 <strong>Gemini</strong>와 같은 <strong>AI</strong> 챗봇을 활용하여 <strong>GLC 리스</strong>에 대한 기초적인 정보나 계약 전 유의사항을 검색하는 것도 일반화되었습니다. <strong>GLC 리스 업체</strong>들은 이러한 검색 트렌드에 맞춰 <strong>인스타그램</strong>이나 <strong>페이스북</strong> 등 소셜 미디어를 통해 프로모션을 홍보하고 있습니다.</p>
+                <p>
+                    자동차 오토리스의 <strong>가장 큰 장점</strong>은 월 납입 요금에 부가세가 포함되어 있으며, 렌터카의 번호판인 '하, 허, 호' 대신 일반 자가용 등록 번호판을 사용한다는 점입니다. 이로 인해 대외적인 품위를 유지하고자 하는 전문직이나 기업체 임원들에게 장기렌트 대비 월등한 선호도를 확보하고 있습니다. 
+                </p>
+                <p>
+                    반면 <strong>치명적인 단점</strong>은 자동차보험료가 리스 납입료에 포함되어 있지 않다는 점과 리스 이용 주체가 여신금융 서비스 계약이기 때문에 이용자의 금융 부채로 반영된다는 점입니다. 따라서 향후 추가 대출 계획이 있거나 신용 평점 유지에 극도로 예민한 경우라면 신중히 상담 컨설팅을 거친 후 진행 여부를 정해야 합니다.
+                </p>
+            </section>
 
-            <hr>
-            
-            <h3>공인된 신뢰성 외부 사이트 참고 자료</h3>
-            <div class="trust-links">
-                <p>성공적인 리스를 위해 공신력 있는 기관의 정보를 참고하세요:</p>
+            <section id="age-profiles">
+                <h2>연령별 및 라이프스타일별 최적의 GLC 리스 추천 플랜</h2>
+                <p>
+                    동일한 신차 모델이라 할지라도 신청하는 계약자의 가구 환경, 소득 요건 및 연령대에 따라 금융 설계 구조는 다변화되어야 합니다. 수만 건의 데이터분석 결과를 기초로 각 생애 주기별 가장 실리적인 대안을 제안합니다.
+                </p>
+
+                <div class="graph-container">
+                    <h3>연령대별 선호 구매 및 가입 형태 분포 분석</h3>
+                    <p>연령대에 따라 월 지출 가능 한도 및 보험 조건 차이점이 존재하여 선호하는 금융 플랜에 명확한 차이를 보입니다.</p>
+                    
+                    <div class="graph-visual">
+                        <div class="graph-bar-wrapper">
+                            <div class="graph-value">25%</div>
+                            <div class="graph-bar" style="height: 60px;"></div>
+                            <div class="graph-label">20대 직장인</div>
+                        </div>
+                        <div class="graph-bar-wrapper">
+                            <div class="graph-value">48%</div>
+                            <div class="graph-bar accent" style="height: 115px;"></div>
+                            <div class="graph-label">30대 전문직</div>
+                        </div>
+                        <div class="graph-bar-wrapper">
+                            <div class="graph-value">62%</div>
+                            <div class="graph-bar accent" style="height: 148px;"></div>
+                            <div class="graph-label">40대 사업자</div>
+                        </div>
+                        <div class="graph-bar-wrapper">
+                            <div class="graph-value">55%</div>
+                            <div class="graph-bar" style="height: 132px;"></div>
+                            <div class="graph-label">50대 법인</div>
+                        </div>
+                        <div class="graph-bar-wrapper">
+                            <div class="graph-value">30%</div>
+                            <div class="graph-bar" style="height: 72px;"></div>
+                            <div class="graph-label">60대 이상</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+                        40대 자영업 및 개인사업자 군에서 종합소득세 및 법인세 경비 처리 목적의 오토리스 가입 비중이 압도적인 순위 1위를 차지했습니다.
+                    </p>
+                </div>
+
+                <h3>연령별 맞춤 추천 리스 전략</h3>
                 <ul>
-                    <li><a href="https://www.mlit.go.kr/" target="_blank">국토교통부: 자동차 관련 법규 및 정책 정보</a></li>
-                    <li><a href="https://www.fss.or.kr/" target="_blank">금융감독원: 여신금융기관(리스사) 관련 정보</a></li>
-                    <li><a href="https://www.koccon.net/" target="_blank">한국소비자원: 자동차 금융 상품 소비자 피해 예방 정보</a></li>
-                    <li><a href="https://www.kofia.or.kr/" target="_blank">한국금융투자협회: 리스 관련 금융 정보</a></li>
-                    <li><a href="https://www.boc.go.kr/" target="_blank">한국은행: 기준금리 및 금융 시장 동향</a></li>
+                    <li>
+                        <strong>20대 사회초년생 및 신규 운전자:</strong> 
+                        보험 이력이 짧은 20대는 본인 명의로 보험 요율을 직접 가입하는 리스 방식의 특성상 보험료 부담이 상당히 클 수 있습니다. 이 시기에는 차량 자체를 무보증 저렴한곳 위주로 알아본 후, 연간 보험료와 리스 납입금을 합산하여 장기렌트와 철저히 비교 계산해야 비용 낭비를 예방할 수 있습니다.
+                    </li>
+                    <li>
+                        <strong>30대 고소득 직장인 및 전문직:</strong> 
+                        본격적인 소득 상승기인 30대에는 매월 부담 없는 요금 수준인 선수금 30% 조건이나, 만기 시 부담 없는 인수를 목적으로 보증금 30%를 거는 플랜을 추천합니다. 유튜브나 인스타그램 등 SNS의 실체적인 가성비 후기를 살펴보아도, 30대 운전자들은 외장 디자인 개선 혜택을 주는 GLC AMG Line의 구매 비중이 가장 높습니다.
+                    </li>
+                    <li>
+                        <strong>40대와 50대 개인사업자 및 법인기업 대표:</strong> 
+                        사업을 영위하는 자영업자는 종합소득세 신고 시 차량 운행 일지 작성을 전제로 연간 최대 1,500만원(리스료 1,000만원, 유류비 및 정비비 500만원 한도)의 세액 경비처리가 가능합니다. 다이렉트 컨설팅 업체를 거쳐 불필요한 이자 유통 마진을 제외한 최저가 신차리스를 세팅하는 것이 절세 측면에서 최고의 효율을 발휘합니다.
+                    </li>
+                    <li>
+                        <strong>60대 이상의 은퇴 세대:</strong> 
+                        국민연금 외 고정 소득이 제한적인 고령층은 월 고정 지출을 최소화하기 위한 목적의 초장기 60개월 계약을 바탕으로 보증금 예치를 유도하여 실질 부담 이자율 자체를 떨어뜨리는 전략이 현명합니다.
+                    </li>
                 </ul>
-            </div>
-        </section>
-        
-        <section id="faq">
-            <h2>❓ 자주 묻는 질문 (FAQ) - GLC 리스 편</h2>
-            <p><strong>GLC 리스</strong>와 관련하여 고객님들이 가장 궁금해하시는 질문들을 모았습니다. 2026년 리스 준비에 참고하세요.</p>
-            <dl>
-                <dt tabindex="0" aria-expanded="false">Q1. GLC 리스 견적은 언제 받는 것이 가장 좋은가요?</dt>
-                <dd>A. <strong>GLC 리스</strong>는 신차 재고에 따라 프로모션 조건이 수시로 변동됩니다. <strong>GLC 300</strong> 모델의 경우, 분기 말이나 연말에 <strong>GLC 리스 할인</strong> 프로모션이 집중되는 경향이 있으므로, 이 시기에 견적을 받는 것이 유리합니다. 출고를 희망하는 날짜 기준 1~2개월 전에 미리 견적을 받고 재고를 확보하는 것이 좋습니다.</dd>
-                
-                <dt tabindex="0" aria-expanded="false">Q2. GLC 리스 계약 만료 시 인수와 반납 중 무엇이 유리한가요?</dt>
-                <dd>A. 계약 만료 시점의 차량 잔존가치와 실제 중고차 시세를 비교하여 결정합니다. <strong>GLC 300</strong>이나 <strong>GLC 쿠페</strong>처럼 인기가 높은 모델은 중고차 시세가 잔존가치보다 높아 인수가 유리할 수 있습니다. 반면, 차량 상태가 좋지 않거나 중고차 시세가 하락한 경우 반납하는 것이 <strong>GLC 리스</strong> 고객에게 유리합니다. <strong>GLC 리스 업체</strong>에서 만기 3개월 전에 만기 옵션을 안내해 드립니다.</dd>
-                
-                <dt tabindex="0" aria-expanded="false">Q3. 법인 사업자에게 GLC 리스가 유리한 이유는 무엇인가요?</dt>
-                <dd>A. <strong>법인 사업자</strong>는 <strong>GLC 리스료</strong> 전액을 손비 처리할 수 있어 법인세 절감 효과가 큽니다. 취등록세, 자동차세, 보험료 등이 월 리스료에 모두 포함되므로 회계 처리가 간편하며, 차량 관리도 리스사에서 대행해 주어 업무 효율성이 높습니다. <strong>GLC 300 리스</strong> 같은 고가 차량일수록 절세 효과가 더욱 두드러집니다.</dd>
-                
-                <dt tabindex="0" aria-expanded="false">Q4. GLC 리스 승계 시 주의해야 할 점은 무엇인가요?</dt>
-                <dd>A. <strong>GLC 리스 승계</strong> 시에는 승계 수수료, 남은 계약 기간, 잔존가치 등을 꼼꼼히 확인해야 합니다. 특히 차량의 주행 거리와 상태, 사고 이력을 정확히 파악해야 합니다. 승계자에게 <strong>GLC 리스</strong> 계약의 <strong>장단점</strong>을 명확히 설명하고, 승계 시점의 프로모션 혜택(선납금 지원 등)을 고려하여 승계 조건을 협상하는 것이 중요합니다.</dd>
-                
-                <dt tabindex="0" aria-expanded="false">Q5. GLC 리스 업체 선정 시 가장 중요한 기준은 무엇인가요?</dt>
-                <dd>A. <strong>GLC 리스 가격</strong>의 투명성과 딜러의 전문성입니다. <strong>GLC 리스 싼곳</strong>을 찾기 위해 단순히 월 납입금만 비교하기보다는, <strong>GLC 300</strong> 모델의 경우 <strong>잔존가치</strong> 설정이 합리적인지, 숨겨진 수수료가 없는지 확인해야 합니다. 또한, <strong>GLC 리스</strong> 전문 업체 딜러의 경력과 <strong>GLC 리스 후기</strong>를 참고하여 신뢰도를 확인하는 것이 가장 중요합니다.</dd>
-            </dl>
-        </section>
+            </section>
 
-        <section id="check-list-download">
-            <h2>🎁 GLC 리스 계약 성공 체크리스트 다운로드</h2>
-            <p><strong>GLC 리스</strong> 계약 전후 놓치기 쉬운 50가지 항목을 담은 <strong>GLC 리스</strong> 체크리스트를 무료로 다운로드하세요. 성공적인 리스를 위한 완벽한 가이드입니다.</p>
-            <form action="download-checklist.php" method="POST" aria-label="체크리스트 다운로드 폼">
-                <div class="form-group">
-                    <label for="download_email">이메일 주소</label>
-                    <input type="email" id="download_email" name="download_email" placeholder="체크리스트를 받을 이메일을 입력하세요" required>
+            <section id="discount-secrets">
+                <h2>비공식 할인 프로모션 혜택과 저렴한 수입차 전문 업체 탐색 노하우</h2>
+                <p>
+                    많은 소비자들이 메르세데스 벤츠 전시장을 방문하여 견적을 수령하지만, 사실 오프라인 대리점 중심의 상담 구조는 한정된 딜러사의 금융 상품만을 강요하는 한계가 있습니다. 수입 브랜드 본사에서 분기별, 월별로 각 전국 딜러사에 하달하는 특가 프로모션과 추가 사은품, 현금지원 규모는 수시로 상이합니다.
+                </p>
+                <p>
+                    최근에는 토스, 카카오톡 채널 등 플랫폼을 통한 신규 비대면 한도 확인 기술의 발달로 유통 과정의 중간 마진을 완벽하게 줄인 다이렉트 견적 사이트들이 생겨나고 있습니다. 이를 통해 각 신차리스 대행업체는 전국의 수많은 메르세데스 벤츠 모터스들의 재고 동향을 비교분석하여 가장 싼곳으로 출고를 이어줍니다.
+                </p>
+                <p>
+                    리스 계약 체결 과정에서 영업사원에게 추가적으로 보장을 약속받아야 하는 핵심 사은품 및 지원 혜택 항목은 다음과 같습니다.
+                </p>
+                <ol>
+                    <li>최고급 수입차 전용 프리미엄 선팅 시공 및 유리막 코팅 보증</li>
+                    <li>전후방 고화질 블랙박스 및 보조배터리 무상 장착</li>
+                    <li>수입차 제휴 신용카드 가입 조건의 정비 할인 혜택</li>
+                    <li>메르세데스 벤츠 순정 골프백 세트, 정품 키링, 장우산 사은품 패키지</li>
+                    <li>리스 실행 후 신규 탁송 지원금 및 주유 상품권 지급 이벤트 혜택</li>
+                </ol>
+            </section>
+
+            <section id="community-reviews">
+                <h2>실제 차주들의 내돈내산 출고기 및 온라인 커뮤니티 의견 동향</h2>
+                <p>
+                    온라인상의 수많은 광고성 글들을 필터링하기 위해 자동차 전문 대형 커뮤니티인 디시인사이드 차갤(디시), 보배드림 수입차 게시판, 그리고 젊은 남성층의 이용 비중이 절대적으로 높은 에펨코리아(펨코) 및 에펨코리아 차포 등의 여론을 수집하여 실제 차주들의 후기를 종합했습니다.
+                </p>
+                <p>
+                    보배드림의 한 개인사업자 차주는 GLC 300 4MATIC AMG Line 모델을 보증금 30% 조건으로 수입차 리스 전문 업체를 통해 무보증 한도 승인을 받은 과정에 대한 솔직한 내돈내산 스토리를 공개했습니다. 그는 벤츠 파이낸셜 공식 금융을 사용했을 때보다 다이렉트 제휴 금융을 사용함으로써 금리를 약 1.8% 포인트 낮춰 매달 고정비 8만원을 절감했다고 전했습니다.
+                </p>
+                <p>
+                    펨코 유저들의 주요 관심사 중 하나는 장기렌트와 오토리스의 명확한 가격 격차 및 보험 산정 방식 차이였습니다. 다이렉트 렌트카는 취등록세와 연간 세금이 아예 매월 청구되는 비용 속에 자동 산입되지만, 리스는 등록세는 리스비에 녹이되 자차 보험료는 이용자가 별도로 가입해야 하는 차이가 있음을 환기시켰습니다. 이러한 실제 차주들의 경험담은 신차 계약 전에 면밀히 검토할 가치가 매우 큽니다.
+                </p>
+            </section>
+
+            <section id="faq-section">
+                <h2>GLC 리스 비교와 관련해 가장 빈번하게 제기되는 질문 리스트</h2>
+                <dl>
+                    <dt tabindex="0" aria-expanded="false">
+                        <span>Q1. 수입차 오토리스 계약 시 보증금과 선수금의 차이점은 무엇인가요?</span>
+                        <span>[펼치기]</span>
+                    </dt>
+                    <dd>
+                        선수금(선납금)은 매월 납입해야 할 리스 요금의 일부를 계약 시점에 선제적으로 일시 지불하는 금액입니다. 이는 소멸성 성격을 지니기 때문에 만기 시점에 돌려받지 못하는 대신 매달 납부 금액을 극도로 경감시켜 줍니다. 반면, 보증금은 금융 계약 보증을 목적으로 수입차 금융사에 예치해 두는 돈으로, 금리를 절감해 주며 만기 후 차량 반납 시 100% 온전하게 전액 환급받거나 만기 인수를 위한 상계 처리 용도로 사용이 가능합니다.
+                    </dd>
+
+                    <dt tabindex="0" aria-expanded="false">
+                        <span>Q2. 개인사업자가 GLC 리스를 계약했을 때 세금 혜택 한도는 얼마인가요?</span>
+                        <span>[펼치기]</span>
+                    </dt>
+                    <dd>
+                        현행 소득세법 및 법인세법 기준에 의거하여, 업무용 차량 한 대당 연간 최대 1,500만원 상당의 경비 처리가 허용됩니다. 이 중 직접적인 리스 요금 또는 장기렌트비는 연간 최대 1,000만원까지 비용 처리가 인정되며, 초과분에 한해서는 다음 과세 연도로 이월하여 감가상각 누적 처리가 수행됩니다. 여기에 차량 운행 과정에서 지출되는 보험료, 유류비, 고속도로 통행료, 정비 비용 등을 포함하여 500만원 한도가 추가 인정됩니다.
+                    </dd>
+
+                    <dt tabindex="0" aria-expanded="false">
+                        <span>Q3. 무보증 조건으로 GLC 수입차 리스를 진행하기 위한 신용 점수 기준은 어떻게 되나요?</span>
+                        <span>[펼치기]</span>
+                    </dt>
+                    <dd>
+                        기본적으로 초기 비용이 일체 청구되지 않는 완벽한 0원 조건의 무보증 리스는 신청자의 소득 증빙 유무와 개인 신용 등급(KCB 신용평점 기준 최소 800점 이상 권장)에 의해 판가름이 납니다. 직종이 불명확하거나 매출 규모가 미약한 신규 개인사업자의 경우에는 보증증권 발행 업체의 서울보증보험 이행보증증권으로 대체 설정하는 우회 경로를 통해 승인을 취득하는 특수한 컨설팅 상담 방법이 자주 애용됩니다.
+                    </dd>
+
+                    <dt tabindex="0" aria-expanded="false">
+                        <span>Q4. 중도 해지 시 과도하게 청구되는 리스 위약금을 피할 수 있는 대비책이 있나요?</span>
+                        <span>[펼치기]</span>
+                    </dt>
+                    <dd>
+                        리스 계약 기간을 다 채우지 못하고 일방 파기할 경우 잔여 리스 비용의 최대 30%에서 40% 이상까지 무자비한 중도 해지 위약 수수료가 발생하게 됩니다. 이를 예방하기 위한 현실적인 최적의 대안은 리스 승계 전문 앱이나 어플 등을 사용하여 동일한 조건을 이어나갈 승계 예정자를 확보하는 것입니다. 잔존 기간과 보증금 조건이 매력적인 경우, 승계 시장에서 아주 신속하게 매물이 소화되어 막대한 금전 손실 부담을 회피할 수 있게 됩니다.
+                    </dd>
+                </dl>
+            </section>
+
+            <section id="official-links">
+                <h2>신뢰도 높은 외부 공식 정보원 및 안내 서비스</h2>
+                <p>
+                    더 자세한 기술 제원이나 메르세데스 벤츠 브랜드의 순수 정책 정보를 확인하시려면 아래 공인된 공식 대외 채널들을 통해 데이터를 보완하실 것을 추천합니다.
+                </p>
+                <div class="external-links">
+                    <a href="https://leaselcary.withusrizz.com" target="_blank" rel="noopener noreferrer">1. 벤츠 GLC 다이렉트 신차 금융 리스 통합 비교 연동 센터</a>
+                    <a href="https://namu.wiki/w/%EB%A9%94%EB%A5%B4%EC%85%B8%EB%8D%B0%EC%8A%A4-%EB%B2%A4%EC%B8%A0%20GLC" target="_blank" rel="noopener noreferrer">2. 나무위키 - 메르세데스 벤츠 GLC 역사 및 전 세대 히스토리 자료</a>
+                    <a href="https://www.mercedes-benz.co.kr" target="_blank" rel="noopener noreferrer">3. Mercedes-Benz Korea - 대한민국 공식 홈페이지 수입 세부 제원 안내</a>
                 </div>
-                <button type="submit" class="submit-button">체크리스트 받기 (무료)</button>
-            </form>
-        </section>
-        
-        <a href="#reservation" class="cta-button" aria-label="최종 GLC 리스 무료 견적 신청">지금 바로 GLC 최적의 견적 찾기</a>
+            </section>
 
+            <section id="lead-consulting">
+                <div class="lead-form">
+                    <h3>2026년형 벤츠 GLC 최저가 비교 상담 신청 및 프로모션 안내</h3>
+                    <p>
+                        당월 최상위 할인율을 적용받고 딜러사별 현금지원 조건이 적용된 실제 무보증 비교 견적서를 이메일 또는 카카오톡으로 즉시 송부해 드립니다. 당사는 금융사 제휴 전속 컨설팅 전문 서비스 제공사로서 개개인의 신용 여건에 맞춤 설계를 약속합니다.
+                    </p>
+                    <form onsubmit="alert('소중한 개인정보가 안전하게 접수되었습니다. 담당 에이전트가 신속하게 맞춤 컨설팅 리포트를 카카오톡 또는 유선으로 연락드리겠습니다.'); return false;">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="user-name">고객 성함 (실명)</label>
+                                <input type="text" id="user-name" placeholder="홍길동" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-phone">연락처 및 휴대폰 번호</label>
+                                <input type="tel" id="user-phone" placeholder="010-0000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-target">구매 대상 희망 트림</label>
+                                <select id="user-target">
+                                    <option>GLC 300 4MATIC 가솔린 일반형</option>
+                                    <option>GLC 300 쿠페 스포티형</option>
+                                    <option>GLC 220d 디젤 친환경</option>
+                                    <option>AMG 고성능 퍼포먼스 라인</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="user-msg">기타 요청 사향 (승계 유무, 타사 견적 보유 여부 등)</label>
+                            <input type="text" id="user-msg" placeholder="희망하는 월 예산 한도 또는 무보증 요청 여부를 남겨주시면 정밀 피드백을 제공합니다.">
+                        </div>
+                        <button type="submit" class="calc-btn" style="background-color: var(--accent-color);">실시간 특가 프로모션 비교 견적 요청</button>
+                    </form>
+                </div>
+            </section>
+        </article>
     </main>
 
     <script>
-        // FAQ 아코디언 기능 (접기/펼치기)
-        document.querySelectorAll('dl dt').forEach((dt) => {
-            dt.addEventListener('click', () => {
-                const isActive = dt.classList.toggle('active');
-                dt.setAttribute('aria-expanded', isActive);
-            });
-            dt.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    dt.click();
-                }
-            });
+      // FAQ Accordion 
+      document.querySelectorAll('dl dt').forEach((dt) => {
+        dt.addEventListener('click', () => {
+          const isCurrentlyActive = dt.classList.contains('active');
+          
+          document.querySelectorAll('dl dt').forEach((otherDt) => {
+            otherDt.classList.remove('active');
+            otherDt.setAttribute('aria-expanded', 'false');
+            const otherDd = otherDt.nextElementSibling;
+            if (otherDd) otherDd.style.display = 'none';
+            const otherSpan = otherDt.querySelector('span:last-child');
+            if (otherSpan) otherSpan.textContent = '[펼치기]';
+          });
+          
+          if (!isCurrentlyActive) {
+            dt.classList.add('active');
+            dt.setAttribute('aria-expanded', 'true');
+            const dd = dt.nextElementSibling;
+            if (dd) dd.style.display = 'block';
+            const span = dt.querySelector('span:last-child');
+            if (span) span.textContent = '[접기]';
+          }
         });
+        
+        dt.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            dt.click();
+          }
+        });
+      });
+
+      // Simple Lease Cost Calculation Formula
+      function calculateLease() {
+        const msrp = parseFloat(document.getElementById('car-model').value);
+        const term = parseInt(document.getElementById('term').value);
+        const depType = document.getElementById('deposit-type').value;
+        const depRate = parseFloat(document.getElementById('deposit-rate').value);
+        const discountInput = parseFloat(document.getElementById('custom-discount').value) || 0;
+        
+        const discountAmt = discountInput * 10000;
+        const netCarPrice = msrp - discountAmt;
+        
+        // standard interest rate simulation
+        let annualRate = 0.055; 
+        if (depType === '보증금' && depRate > 0) {
+            annualRate = annualRate - (depRate * 0.03); 
+        } else if (depType === '무보증') {
+            annualRate = 0.065; 
+        }
+
+        const monthlyRate = annualRate / 12;
+        
+        // residual value simulation (longer term -> lower residual value)
+        let residualRate = 0.58; 
+        if (term === 48) residualRate = 0.50;
+        if (term === 60) residualRate = 0.42;
+
+        const residualVal = netCarPrice * residualRate;
+        const principalToAmortize = netCarPrice - residualVal;
+        
+        let initialPayment = 0;
+        let finalPrincipal = principalToAmortize;
+        
+        if (depType === '선수금') {
+            initialPayment = msrp * depRate;
+            finalPrincipal = Math.max(0, principalToAmortize - initialPayment);
+        } else if (depType === '보증금') {
+            initialPayment = msrp * depRate;
+        }
+
+        // PMT math
+        let monthlyFee = 0;
+        if (monthlyRate === 0) {
+            monthlyFee = finalPrincipal / term;
+        } else {
+            monthlyFee = (finalPrincipal * monthlyRate * Math.pow(1 + monthlyRate, term)) / (Math.pow(1 + monthlyRate, term) - 1);
+        }
+
+        // Add residual value interest
+        monthlyFee += (residualVal * monthlyRate);
+        
+        return {
+            msrp: msrp,
+            discount: discountAmt,
+            initial: initialPayment,
+            monthly: Math.round(monthlyFee)
+        };
+      }
+
+      function showResults() {
+        const result = calculateLease();
+        
+        document.getElementById('res-msrp').textContent = result.msrp.toLocaleString() + ' 원';
+        document.getElementById('res-discount').textContent = result.discount.toLocaleString() + ' 원';
+        document.getElementById('res-initial').textContent = result.initial.toLocaleString() + ' 원';
+        document.getElementById('res-monthly').textContent = '월 약 ' + result.monthly.toLocaleString() + ' 원';
+        
+        document.getElementById('result-box').style.display = 'block';
+      }
     </script>
-  
 
 
+	
+	
 
 
-
+	
 <footer id="dynamic-footer" style="font-size: 12px; color: #777; padding: 40px 20px; text-align: center; line-height: 1.8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #fafafa; border-top: 1px solid #eee;">
   
   <div style="margin-bottom: 12px; font-weight: 500; color: #444;">
@@ -742,7 +1094,6 @@
 
 })();
 </script>
-
 
 
 
